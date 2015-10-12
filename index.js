@@ -5,24 +5,24 @@ var elixir 		  = require('laravel-elixir'),
 
 var Task = elixir.Task;
 
-elixir.extend("angulartemplatecache", function(options, from, to, wrap) 
+elixir.extend("angulartemplatecache", function(options, from, to, wrap, watch) 
 {
 	new Task('angulartemplatecache', function() 
 	{
 	    if (wrap)
 	    {
-	        gulp.src(from)
+	        return gulp.src(from)
 	            .pipe(templateCache(options))
 	            .pipe(insert.wrap('(function(angular) {', '})(angular);'))
 	            .pipe(gulp.dest(to));
 	    } 
 	    else
 	    {
-	        gulp.src(from)
+	        return gulp.src(from)
 	            .pipe(templateCache(options))
 	            .pipe(gulp.dest(to));
 	    }
     })
-    .watch(from);
+    .watch(watch);
 
 });

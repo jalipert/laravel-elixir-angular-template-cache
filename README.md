@@ -1,6 +1,6 @@
 # elixir-angular-template-cache
 
-Original project by Thomas Creeten, see https://github.com/loganhenson/laravel-elixir-angular-templatecache
+Original project by Logan Henson, see https://github.com/loganhenson/laravel-elixir-angular-templatecache
 
 ## Installation
 ----

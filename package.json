@@ -1,6 +1,6 @@
 {
   "name": "elixir-angular-template-cache",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Laravel Elixir 3 task extension for angular-templatecache",
   "main": "index.js",
   "author": {
@@ -9,9 +9,6 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/larkinwhitaker/laravel-elixir-angular-template-cache.git"
-  },
-  "devDependencies": {
-    "gulp": "^3.8.8"
   },
   "dependencies": {
     "gulp": "^3.8.8",

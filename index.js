@@ -5,7 +5,7 @@ var elixir 		  = require('laravel-elixir'),
 
 var Task = elixir.Task;
 
-elixir.extend("angulartemplatecache", function(options, from, to, wrap, watch) 
+elixir.extend("angulartemplatecache", function(options, from, to, wrap) 
 {
 	new Task('angulartemplatecache', function() 
 	{
@@ -23,6 +23,6 @@ elixir.extend("angulartemplatecache", function(options, from, to, wrap, watch)
 	            .pipe(gulp.dest(to));
 	    }
     })
-    .watch(watch);
+    .watch(from);
 
 });
